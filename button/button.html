@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Button State</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 py-20 flex justify-center">
+
+    <button id="toggleButton" class="bg-blue-500 text-white px-4 py-2 rounded shadow-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400"
+        onclick="toggleButtonState()">
+        Click Me
+    </button>
+
+    <script>
+        function toggleButtonState() {
+            const button = document.getElementById('toggleButton');
+
+            if (button.disabled) {
+                // Enable the button
+                button.disabled = false;
+                button.classList.remove('bg-gray-300', 'cursor-not-allowed');
+                button.classList.add('bg-blue-500', 'hover:bg-blue-600');
+            } else {
+                // Disable the button
+                button.disabled = true;
+                button.classList.remove('bg-blue-500', 'hover:bg-blue-600');
+                button.classList.add('bg-gray-300', 'cursor-not-allowed');
+            }
+        }
+    </script>
+
+</body>
+
+</html>

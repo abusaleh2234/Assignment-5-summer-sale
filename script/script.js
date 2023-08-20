@@ -6,7 +6,7 @@ function clickHendler(product){
     const count = selectItem.childElementCount;
 
     const p = document.createElement('p');
-    p.innerText =  (count + 1) + " " +  itemName;
+    p.innerText =  (count + 1) + ".  " +  itemName;
     p.classList.add('text-xl')
     p.classList.add('font-semibold')
     
@@ -48,8 +48,9 @@ function cuponApply(where){
         document.getElementById('total-discount').innerText = discountcalculet;
 
         document.getElementById('total').innerText = discountThenTotal;
-    } else{
-        document.getElementById('total').innerText = total;
-    }
+    } 
+    // else{
+    //     document.getElementById('total').innerText = total;
+    // }
     
 }
