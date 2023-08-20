@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Sale</title>
+    <link rel="shortcut icon" href="./images/Summer 1.png" type="image/x-icon">
+
+    <!-- font--- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            font-family: 'Work Sans', sans-serif;
+        }
+        .textcolor{
+            color: #111;
+        }
+        .secenderyColor{
+            color: #E527B2;
+        }
+        .colorSter{
+            color: #FFC107;
+        }
+    </style>
+
+    <!-- teilwind---- -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <header class="bg-[#F9F6E2]">
+        <section class="container h-full grid grid-rows  md:grid-cols-2 py-14 items-center mx-auto">
+            <div class="text-center space-y-12">
+                <h3 class="text-3xl font-medium textcolor">---SALE FEVER---</h3>
+                <h1 class="text-5xl	font-bold textcolor">Purchase TK 200 or <br> above & get <span class="secenderyColor">20% off</span></h1>
+                <div class="flex justify-center items-center space-x-4">
+                    <p class="text-2xl font-medium">Use Promo Code</p>
+                    <p class="text-2xl font-semibold text-white bg-[#E527B2] py-4 px-6 rounded-lg">SELL200</p>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <img class="w-10/12" src="./images/Summer 1.png" alt="">
+            </div>
+        </section>
+    </header>
+    <!-- =============main=========== -->
+    <main class="bg-[#F8F8F8] py-10 md:py-28">
+        <section class="container mx-auto ">
+            <h2 class="text-4xl	font-semibold textcolor pb-6 pl-6">Kitchenware</h2>
+            <div class="lg:flex gap-6 mx-6">
+                <div class="lg:w-3/4">
+                    
+                    <div class="grid grid-cols md:grid-cols-2 lg:grid-cols-3  gap-6">
+                        <!-- =======Accessories====== -->
+                        <!-- onclick="hendleclick(this)" -->
+                        <div onclick="clickHendler(this)" class="p-4 bg-[#FFF] rounded-xl shadow-xl">
+                            <figure  class="bg-[#F8F8F8] rounded-lg py-6 flex justify-center"><img src="./images/prod1.png" alt="Shoes" /></figure>
+                            <div class="space-y-2 text-center pt-5">
+                                <div class="">
+                                    <div class="rating">
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                      </div>
+                                </div>
+                              <h2 class="text-xl font-semibold textcolor">K. Accessories</h2>
+                              <p>39.00 TK</p>
+                            </div>
+                        </div>
+                        <!-- K. Accessories -->
+                        <div onclick="clickHendler(this)" class="p-4 bg-[#FFF] rounded-xl shadow-xl">
+                            <figure  class="bg-[#F8F8F8] rounded-lg py-6 flex justify-center"><img src="./images/prod2.png" alt="Shoes" /></figure>
+                            <div class="space-y-2 text-center pt-5">
+                                <div class="">
+                                    <div class="rating">
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                      </div>
+                                </div>
+                              <h2 class="text-xl font-semibold textcolor">K. Accessories</h2>
+                              <p>25.00 TK</p>
+                            </div>
+                        </div>
+                        <!-- Home Cooker -->
+                        <div onclick="clickHendler(this)" class="p-4 bg-[#FFF] rounded-xl shadow-xl">
+                            <figure  class="bg-[#F8F8F8] rounded-lg py-6 flex justify-center"><img src="./images/prod3.png" alt="Shoes" /></figure>
+                            <div class="space-y-2 text-center pt-5">
+                                <div class="">
+                                    <div class="rating">
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                      </div>
+                                </div>
+                              <h2 class="text-xl font-semibold textcolor">Home Cooker</h2>
+                              <p>49.00 TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- =========spots item======= -->
+                    <h2 class="text-4xl	font-semibold textcolor pb-8 pt-12">Sportswear</h2>
+                    <div  class="grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Sports Back Cap -->
+                        <div onclick="clickHendler(this)" class="p-4 bg-[#FFF] rounded-xl shadow-xl">
+                            <figure  class="bg-[#F8F8F8] rounded-lg py-6 flex justify-center"><img src="./images/prod4.png" alt="Shoes" /></figure>
+                            <div class="space-y-2 text-center pt-5">
+                                <div class="">
+                                    <div class="rating">
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                      </div>
+                                </div>
+                              <h2 class="text-xl font-semibold textcolor">Sports Back Cap</h2>
+                              <p>49.00 TK</p>
+                            </div>
+                        </div>
+                        <!-- Full Jersey Set-->
+                        <div onclick="clickHendler(this)" class="p-4 bg-[#FFF] rounded-xl shadow-xl">
+                            <figure  class="bg-[#F8F8F8] rounded-lg py-6 flex justify-center"><img src="./images/prod5.png" alt="Shoes" /></figure>
+                            <div class="space-y-2 text-center pt-5">
+                                <div class="">
+                                    <div class="rating">
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                      </div>
+                                </div>
+                              <h2 class="text-xl font-semibold textcolor">Full Jersey Set</h2>
+                              <p>69.00 TK</p>
+                            </div>
+                        </div>
+                        <!-- Sports cates -->
+                        <div onclick="clickHendler(this)" class="p-4 bg-[#FFF] rounded-xl shadow-xl">
+                            <figure  class="bg-[#F8F8F8] rounded-lg py-6 flex justify-center"><img src="./images/prod6.png" alt="Shoes" /></figure>
+                            <div class="space-y-2 text-center pt-5">
+                                <div class="">
+                                    <div class="rating">
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                      </div>
+                                </div>
+                              <h2 class="text-xl font-semibold textcolor">Sports cates</h2>
+                              <p>159.00 TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ===============Furniture item========== -->
+                    <h2 class="text-4xl	font-semibold textcolor pb-8 pt-12">Furniture</h2>
+                    <div class="grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Single Relax Chair -->
+                        <div onclick="clickHendler(this)" class="p-4 bg-[#FFF] rounded-xl shadow-xl">
+                            <figure  class="bg-[#F8F8F8] rounded-lg py-6 flex justify-center"><img src="./images/prod7.png" alt="Shoes" /></figure>
+                            <div class="space-y-2 text-center pt-5">
+                                <div class="">
+                                    <div class="rating">
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                      </div>
+                                </div>
+                              <h2 class="text-xl font-semibold textcolor">Single Relax Chair</h2>
+                              <p>185.00 TK</p>
+                            </div>
+                        </div>
+                        <!-- Children play-->
+                        <div onclick="clickHendler(this)" class="p-4 bg-[#FFF] rounded-xl shadow-xl">
+                            <figure  class="bg-[#F8F8F8] rounded-lg py-6 flex justify-center"><img src="./images/prod8.png" alt="Shoes" /></figure>
+                            <div class="space-y-2 text-center pt-5">
+                                <div class="">
+                                    <div class="rating">
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                      </div>
+                                </div>
+                              <h2 class="text-xl font-semibold textcolor">Children play</h2>
+                              <p>299.00 TK</p>
+                            </div>
+                        </div>
+                        <!-- Flexible Sofa -->
+                        <div onclick="clickHendler(this)" class="p-4 bg-[#FFF] rounded-xl shadow-xl">
+                            <figure  class="bg-[#F8F8F8] rounded-lg py-6 flex justify-center"><img src="./images/prod9.png" alt="Shoes" /></figure>
+                            <div class="space-y-2 text-center pt-5">
+                                <div class="">
+                                    <div class="rating">
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                      </div>
+                                </div>
+                              <h2 class="text-xl font-semibold textcolor">Flexible Sofa</h2>
+                              <p>339.00 TK</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/4 mt-6 lg:mt-0 space-y-6">
+                    <div class="bg-[#FFF] p-6 rounded-lg">
+                        <h3 class="text-2xl	font-medium	textcolor">Have coupon?</h3>
+                        <div class="w-full flex">
+                            <input id="cupon-code" class="w-7/12 text-xl py-4 px-2 border rounded-es-lg	 rounded-ss-lg outline-none " type="text" placeholder="Coupon code" name="" >
+                            <button onclick="cuponApply(this)" disabled id="apply-btn" class=" text-2xl text-white font-medium py-4 px-5 bg-[#E527B2] rounded-se-lg	rounded-ee-lg">Apply</button>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#FFF] p-6 rounded-lg space-y-4">
+                        <div id="select-product" class="">
+    
+                        </div>
+                        <hr>
+                        <div class="space-y-3">
+                            <p class="text-2xl	font-medium	textcolor">Total price: <span id="total-price" class="text-[#b0b0b0]">00</span> TK</p>
+                            <p class="text-2xl	font-medium	textcolor">Discount : <span id="total-discount" class="text-[#b0b0b0]">00</span>TK</p>
+                            <p class="text-2xl	font-medium	textcolor">Total: <span id="total" class="text-[#b0b0b0]">00</span> TK</p>
+                            
+                        </div>
+                        <hr>
+                        <div class="mx-6">
+                            <!-- Open the modal using ID.showModal() method -->
+                            <div class="justify-center">
+                                <button id="purchase-btn" disabled class="w-full text-xl rounded-lg btn font-semibold	text-[#fff] bg-[#E527B2]" onclick="my_modal_5.showModal()">Make Purchase</button>
+                            </div>
+                            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                            <form method="dialog" class="modal-box text-center">
+                                <div class="grid justify-center">
+                                    <img src="./images/congo.png" alt="">
+                                </div>
+                                <h3 class="font-bold text-4xl ">Congratulations</h3>
+                                <p class="py-4">Your Purchase the product</p>
+                                <div class="modal-action grid justify-center">
+                                <!-- if there is a button in form, it will close the modal -->
+                                <div class="">
+                                    <button onclick="backHomePage(this)" class="px-8 py-4 text-xl rounded-lg	font-semibold	text-[#fff] bg-[#E527B2]">Go Home</button>
+                                </div>
+                                </div>
+                            </form>
+                            </dialog>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./script/script.js"></script>
+</body>
+</html>
