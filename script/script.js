@@ -28,13 +28,7 @@ function clickHendler(product){
    
 }
 function backHomePage(back){
-    window.location.href = "http://127.0.0.1:5500/index.html";
-    // const selectItem = document.getElementById('select-product')
-    // selectItem.appendChild()
-    // document.getElementById('total-price').innerText = "00";
-    // document.getElementById('total').innerText = "00";
-    // document.getElementById("total-discount").innerText = "00";
-    // console.log("home click");
+    window.location.reload()
 }
 
 function cuponApply(where){
@@ -50,7 +44,7 @@ function cuponApply(where){
         document.getElementById('total').innerText = discountThenTotal;
     } 
     // else{
-    //     document.getElementById('total').innerText = total;
+    //     document.getElementById('total').innerText = total.toFixed(2);
     // }
     
 }
