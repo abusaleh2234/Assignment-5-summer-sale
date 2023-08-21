@@ -14,7 +14,7 @@ function clickHendler(product){
     const productPrice = product.childNodes[3].childNodes[5].innerText.split(" ")[0];
     const Price = parseFloat(productPrice );
     total += Price;
-    totalPrice.innerText = total;
+    totalPrice.innerText = total.toFixed(2);
     // document.getElementById('total').innerText = total;
     
     if( total > 0){
@@ -44,7 +44,7 @@ function cuponApply(where){
     
     if(cuponValue === "SELL200"){
         const discountcalculet =(total*0.20).toFixed(2)
-        const discountThenTotal = total - discountcalculet;
+        const discountThenTotal = (total - discountcalculet).toFixed(2);
         document.getElementById('total-discount').innerText = discountcalculet;
 
         document.getElementById('total').innerText = discountThenTotal;
